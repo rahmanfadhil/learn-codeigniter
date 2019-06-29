@@ -17,9 +17,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home</a>
-          <a class="nav-item nav-link" href="#">Mahasiswa</a>
-          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="<?= base_url() ?>">Home</a>
+          <a class="nav-item nav-link" href="<?= base_url() ?>mahasiswa">Mahasiswa</a>
+          <a class="nav-item nav-link" href="<?= base_url() ?>">About</a>
         </div>
       </div>
     </div>
