@@ -1,7 +1,7 @@
 <h2>Tambah Mahasiswa</h2>
 
 <div class="row mt-3">
-  <div class="col-md-4">
+  <div class="col-md-6">
     <form action="" method="post">
       <?php if (validation_errors()): ?>
         <div class="alert alert-danger" role="alert">

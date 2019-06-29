@@ -5,6 +5,7 @@ class Mahasiswa extends CI_Controller {
   {
     parent::__construct();
     $this->load->model('Mahasiswa_model');
+    // $this->load->library('session');
   }
 
   public function index()
@@ -29,7 +30,9 @@ class Mahasiswa extends CI_Controller {
       $this->load->view('mahasiswa/tambah');
       $this->load->view('templates/footer');
     } else {
-      echo 'Berhasil!';
-    }  
+      $this->Mahasiswa_model->tambahMahasiswa();
+      $this->session->set_flashdata('flash', 'Ditambahkan');
+      redirect('mahasiswa');
+    }
   }
 }
