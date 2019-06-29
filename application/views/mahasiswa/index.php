@@ -22,7 +22,12 @@
     <div class="list-group">
       <h3 class="mb-3">Daftar Mahasiswa</h3>
       <?php foreach($mahasiswa as $mhs): ?>
-      <li class="list-group-item"><?= $mhs['nama'] ?></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <?= $mhs['nama'] ?>
+        <a href="<?= base_url() ?>mahasiswa/hapus/<?= $mhs['id'] ?>" class="badge badge-danger" onclick="return confirm('Yakin?')">
+          hapus
+        </a>
+      </li>
       <?php endforeach ?>
     </div>
   </div>

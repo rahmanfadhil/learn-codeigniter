@@ -13,4 +13,8 @@ class Mahasiswa_model extends CI_Model {
       'jurusan' => $this->input->post('jurusan', true),
     ]);
   }
+
+  public function hapusMahasiswa($id) {
+    $this->db->delete('mahasiswa', ['id' => $id]);
+  }
 }
